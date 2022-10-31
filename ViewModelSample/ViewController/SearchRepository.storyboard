@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--リポジトリ検索-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SearchRepositoryViewController" customModule="ViewModelSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="リポジトリ名を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="85x-Tz-IRI">
+                                <rect key="frame" x="8" y="55" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="F8M-Xe-gwh">
+                                <rect key="frame" x="0.0" y="97" width="390" height="713"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="85x-Tz-IRI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="4JL-Qf-VgO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="85x-Tz-IRI" secondAttribute="trailing" constant="8" id="PPI-fB-Sqf"/>
+                            <constraint firstItem="85x-Tz-IRI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="Qca-Bc-jdU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="F8M-Xe-gwh" secondAttribute="bottom" id="RLc-BC-auX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="F8M-Xe-gwh" secondAttribute="trailing" id="VTa-UK-mvs"/>
+                            <constraint firstItem="F8M-Xe-gwh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YPm-2b-hlY"/>
+                            <constraint firstItem="F8M-Xe-gwh" firstAttribute="top" secondItem="85x-Tz-IRI" secondAttribute="bottom" constant="8" id="r0o-We-otf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="リポジトリ検索" id="avj-FV-vIS"/>
+                    <connections>
+                        <outlet property="repositoryNameField" destination="85x-Tz-IRI" id="MjJ-Ee-SSA"/>
+                        <outlet property="tableView" destination="F8M-Xe-gwh" id="T9K-Bq-YyZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
