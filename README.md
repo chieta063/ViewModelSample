@@ -1,1 +1,1 @@
-[MVVM.pdf](https://github.com/chieta063/ViewModelSample/files/9915886/MVVM.pdf)
+![MVVM](https://user-images.githubusercontent.com/6671872/199394211-5d896355-fde6-482b-bdac-739a0525059c.png)
